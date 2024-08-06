@@ -32,7 +32,7 @@ eval(der2)
 ```{r}
 penguins
 
-ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = sex)) +
   geom_point() +
   labs(title = "Penguin Bill Sizes by Species",
        x = "Bill Length (mm)",
@@ -40,9 +40,10 @@ ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = speci
 ```
 
 ```{r}
-ggplot(data = penguins, aes(x = species, y = flipper_length_mm, color = species)) +
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm, color = body_mass_g)) +
   geom_jitter() +
   labs(title = "Flipper Length by Species",
        x = "Species",
        y = "Flipper Length (mm)")
 ```
+
