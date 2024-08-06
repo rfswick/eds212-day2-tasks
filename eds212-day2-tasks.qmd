@@ -28,3 +28,21 @@ eval(der2)
 
 ```
 
+
+```{r}
+penguins
+
+ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
+  geom_point() +
+  labs(title = "Penguin Bill Sizes by Species",
+       x = "Bill Length (mm)",
+       y = "Bill Depth (mm)")
+```
+
+```{r}
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm, color = species)) +
+  geom_jitter() +
+  labs(title = "Flipper Length by Species",
+       x = "Species",
+       y = "Flipper Length (mm)")
+```
