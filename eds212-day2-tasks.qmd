@@ -12,3 +12,19 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+```{r}
+# Create a derivative expression ----
+der1 <- D(expr = expression(x^2), name = "x")
+der1
+
+x <- 3
+eval(der1)
+
+der2 <- D(expr = expression(2 * (3 * a + 2)^4 - 5), name = "a")
+der2
+
+a <- 1.2
+eval(der2)
+
+```
+
