@@ -1,0 +1,14 @@
+---
+title: "EDS212 Day 2 Tasks"
+author: "Rachel Swick"
+format: html
+editor: visual
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
